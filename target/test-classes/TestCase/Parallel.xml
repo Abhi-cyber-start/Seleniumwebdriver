@@ -4,17 +4,17 @@
 <suite thread-count="2" name="Suite" parallel = "tests" >  
 
  <test  name="chromeTest">
-  <parameter name="browser" value="Chrome" />
+   <parameter name="browser" value="Chrome" />
     <classes>
       <class name="TestCase.DemoBlaze"/>
     </classes>
   </test> <!-- Test1 -->
    
  <test  name="edgeTest">
- <parameter name="browser" value="edge" />
+   <parameter name="browser" value="edge" />
     <classes>
       <class name="TestCase.DemoBlaze"/>
     </classes>
   </test> <!--Test2 -->
   
-</suite> 
+</suite>

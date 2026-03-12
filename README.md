@@ -24,6 +24,7 @@ The framework follows the **Page Object Model (POM)** design pattern to maintain
 * `ProductPage`
 * `CartPage`
 * `OrderPage`
+  
 **Test Classes**
 * `DemoBlaze` – Automates the complete end-to-end purchase flow
 ---

@@ -1,0 +1,8 @@
+/target/
+test-output/
+*.class
+*.log
+*.zip
+*.7z
+*.xlsx
+*.html

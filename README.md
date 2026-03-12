@@ -67,13 +67,13 @@ The framework follows the **Page Object Model (POM)** design pattern to maintain
 
 ## Test Execution Strategy
 
-The framework supports multiple test execution strategies using TestNG:
+The framework supports multiple test execution strategies using TestNG.
 
 **Sequential Execution**
-Tests can be executed sequentially, where each test runs one after another in a single thread. This approach is useful for debugging and ensuring stable execution when tests depend on application state.
+Tests run one after another in a single thread. This approach ensures stable execution and is useful during debugging or when test cases depend on application state.
 
 **Parallel Execution**
-Tests can also be executed in parallel using multiple threads. This helps reduce overall test execution time and is commonly used in large automation suites or CI/CD pipelines.
+Tests run simultaneously using multiple threads. This helps reduce overall execution time and improves efficiency when running large automation test suites.
 
 ---
 
@@ -86,10 +86,22 @@ Seleniumwebdriver
 │   ├── test
 │   │   ├── java
 │   │   │   ├── PageObjects
+│   │   │   │   ├── BasePage.java
+│   │   │   │   ├── HomePage.java
+│   │   │   │   ├── CategoryPage.java
+│   │   │   │   ├── ProductPage.java
+│   │   │   │   ├── CartPage.java
+│   │   │   │   └── OrderPage.java
+│   │   │   │
 │   │   │   └── TestCase
+│   │   │       ├── BaseTest.java
+│   │   │       ├── DemoBlaze.java
+│   │   │       ├── Sequential.xml
+│   │   │       └── Parallel.xml
+│   │   │
 │   │   └── resources
+│   │       └── properties
 │
-├── testng.xml
 ├── pom.xml
 └── README.md
 ```
@@ -100,15 +112,11 @@ Seleniumwebdriver
 
 1. Clone the repository
 2. Import the project into an IDE (Eclipse / IntelliJ)
-3. Run the `testng.xml` file
+3. Run the TestNG XML file based on the required execution strategy:
 
-OR using Maven:
+* Run **Sequential.xml** for sequential execution
+* Run **Parallel.xml** for parallel execution
 
-```
-mvn clean test
-```
-
----
 
 ## Key Features
 
